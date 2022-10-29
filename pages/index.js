@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
-import Footer from "../components/shared/Footer";
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import { getSortedPostsData } from '../lib/posts';
+import Link from 'next/link';
+import Date from '../components/date';
+import Footer from '../components/shared/Footer';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -24,16 +24,12 @@ export default function Home({ allPostsData }) {
         </Head>
         <section className={utilStyles.headingMd}>
           <p>
-            Hello, I'm Salaheddine. I'm a geomatics engineer. You can contact me
-            on{" "}
-            <a href="https://www.linkedin.com/in/selfarissi/" target={"_blank"}>
-              LinkedIn
-            </a>
-            .
+            Salut, je suis Hamza Hajjy, un étudiant au lycée. Je suis marocain
+            et francais.
           </p>
         </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <h2 className={utilStyles.headingLg}>Journal</h2>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
