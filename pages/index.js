@@ -24,8 +24,8 @@ export default function Home({ allPostsData }) {
         </Head>
         <section className={utilStyles.headingMd}>
           <p>
-            Salut, je suis Hamza Hajjy, un étudiant au lycée. Je suis marocain
-            et francais.
+            Bonjour, je suis Hamza Hajjy, un étudiant au lycée. Je suis
+            marocain.
           </p>
         </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
